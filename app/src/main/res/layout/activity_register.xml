@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context="com.calm.loginapp.view.activity.RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/ic_launcher_round"/>
+
+        <EditText
+            android:id="@+id/register_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请注册账号"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionDone"
+            android:paddingLeft="5dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/ic_launcher_round"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/ic_launcher_round"/>
+
+        <EditText
+            android:id="@+id/register_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/show_pwd"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/ic_launcher_round"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/register_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册" />
+
+</LinearLayout>
